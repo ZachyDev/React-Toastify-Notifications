@@ -10,6 +10,7 @@ class Notifications extends Component {
         toast('Hello user!',{ position: toast.POSITION.TOP_RIGHT});
         toast('Hello user!',{ position: toast.POSITION.TOP_CENTER});
         toast('Hello user!',{ position: toast.POSITION.BOTTOM_LEFT});
+        toast('Hello user!',{ position: toast.POSITION.BOTTOM_CENTER});
         toast('Hello user!',{ position: toast.POSITION.BOTTOM_RIGHT});
     }
     render() {
