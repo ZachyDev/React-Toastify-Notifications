@@ -6,12 +6,24 @@ import 'react-toastify/dist/ReactToastify.css';
 toast.configure();
 class Notifications extends Component {
     notify = () => {
-        toast('Hello user!',{ position: toast.POSITION.TOP_LEFT});
-        toast('Hello user!',{ position: toast.POSITION.TOP_RIGHT});
-        toast('Hello user!',{ position: toast.POSITION.TOP_CENTER});
-        toast('Hello user!',{ position: toast.POSITION.BOTTOM_LEFT});
-        toast('Hello user!',{ position: toast.POSITION.BOTTOM_CENTER});
-        toast('Hello user!',{ position: toast.POSITION.BOTTOM_RIGHT});
+        toast('Hello user!',{ 
+            position: toast.POSITION.TOP_LEFT
+        });
+        toast.success('Sucess Hello user!',{ 
+            position: toast.POSITION.TOP_RIGHT
+        });
+        toast.info('Info Hello user!',{ 
+            position: toast.POSITION.TOP_CENTER
+        });
+        toast.warning('Warning Hello user!',{
+             position: toast.POSITION.BOTTOM_LEFT
+            });
+        toast.error('Error Hello user!',{ 
+            position: toast.POSITION.BOTTOM_CENTER
+        });
+        toast('Hello user!',{ 
+            position: toast.POSITION.BOTTOM_RIGHT
+        });
     }
     render() {
         return (
