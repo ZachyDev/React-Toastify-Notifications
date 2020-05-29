@@ -10,7 +10,8 @@ class Notifications extends Component {
             position: toast.POSITION.TOP_LEFT
         });
         toast.success('Sucess Hello user!',{ 
-            position: toast.POSITION.TOP_RIGHT
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose : 8000
         });
         toast.info('Info Hello user!',{ 
             position: toast.POSITION.TOP_CENTER
@@ -19,7 +20,8 @@ class Notifications extends Component {
              position: toast.POSITION.BOTTOM_LEFT
             });
         toast.error('Error Hello user!',{ 
-            position: toast.POSITION.BOTTOM_CENTER
+            position: toast.POSITION.BOTTOM_CENTER,
+            autoClose: false
         });
         toast('Hello user!',{ 
             position: toast.POSITION.BOTTOM_RIGHT
