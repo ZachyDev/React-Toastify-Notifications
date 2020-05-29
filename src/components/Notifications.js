@@ -11,7 +11,7 @@ const CustomToast = ({closeToast}) => {
         </div>
     )
 }
-// cofugure the toast library
+// cofugure the toast package
 toast.configure();
 class Notifications extends Component {
     notify = () => {
