@@ -2,6 +2,15 @@ import React, { Component } from 'react'
 import  { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
+const CustomToast = ({closeToast}) => {
+    return(
+        <div>
+        Something went wrong
+        <button onClick = { closeToast }>Close</button>
+        </div>
+    )
+}
 // cofugure the toast library
 toast.configure();
 class Notifications extends Component {
@@ -19,7 +28,7 @@ class Notifications extends Component {
         toast.warning('Warning Hello user!',{
              position: toast.POSITION.BOTTOM_LEFT
             });
-        toast.error('Error Hello user!',{ 
+        toast.error(<CustomToast />,{ 
             position: toast.POSITION.BOTTOM_CENTER,
             autoClose: false
         });
